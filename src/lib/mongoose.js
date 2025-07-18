@@ -1,7 +1,7 @@
 import { connectDB } from '@/lib/mongoose';
 import { Todo } from '@/models/Todo';
 
-// GET /api/todo/[id]
+
 export async function GET(req, { params }) {
   await connectDB();
   const { id } = params;
@@ -17,7 +17,7 @@ export async function GET(req, { params }) {
   }
 }
 
-// PUT /api/todo/[id] (Replace entire todo)
+
 export async function PUT(request, { params }) {
   await connectDB();
   const { id } = params;
@@ -31,7 +31,7 @@ export async function PUT(request, { params }) {
   }
 }
 
-// PATCH /api/todo/[id] (Partial update)
+
 export async function PATCH(request, { params }) {
   await connectDB();
   const { id } = params;
@@ -45,7 +45,6 @@ export async function PATCH(request, { params }) {
   }
 }
 
-// DELETE /api/todo/[id]
 export async function DELETE(request, { params }) {
   await connectDB();
   const { id } = params;
