@@ -1,4 +1,4 @@
-// import BlogForm from '../../../components/BlogForm';
+
  import BlogForm from '../../../compoents/BlogForm';
 
 export default function CreateBlog() {
